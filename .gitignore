@@ -6,3 +6,5 @@ logs/
 
 .syndicate-config-dev
 .idea
+deployment_resources.json
+.gitignore
