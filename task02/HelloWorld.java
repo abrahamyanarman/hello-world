@@ -13,9 +13,13 @@ import java.util.Map;
 	isPublishVersion = false,
 	logsExpiration = RetentionSetting.SYNDICATE_ALIASES_SPECIFIED
 )
-public class HelloWorld implements RequestHandler<Object, Map<String, Object>> {
+@LambdaUrlConfig(
+		authType = AuthType.NONE,
+		invokeMode = InvokeMode.BUFFERED
+)
+public class HelloWorld implements RequestHandler<APIGatewayProxyRequestEvent, APIGatewayProxyResponseEvent> {
 
-	public Map<String, Object> handleRequest(Object request, Context context) {
+	public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent input, Context context) {
 		System.out.println("Hello from lambda");
 		Map<String, Object> resultMap = new HashMap<String, Object>();
 		resultMap.put("statusCode", 200);

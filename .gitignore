@@ -3,3 +3,6 @@ logs/
 
 # Project exclude paths
 /target/
+
+.syndicate-config-dev
+.idea
