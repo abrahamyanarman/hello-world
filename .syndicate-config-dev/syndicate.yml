@@ -1,13 +1,13 @@
 account_id: '905418349556'
 deploy_target_bucket: syndicate-education-platform-custom-sandbox-artifacts-sbox02/a7a5b08f
-expiration: 2024-04-25 11:14:02.585159+00:00
+expiration: 2024-04-25T12:38:02+00:00
 extended_prefix_mode: true
 iam_permissions_boundary: arn:aws:iam::905418349556:policy/eo_role_boundary
 project_path: C:\Users\Arman_Abrahamyan\hello_world
 region: eu-central-1
 resources_prefix: cmtr-a7a5b08f-
 resources_suffix: -test
-temp_aws_access_key_id: ASIA5FTZDTP2PJQS4V7D
-temp_aws_secret_access_key: QhtQEtBVtJukV8G2sS0lJQC2wuK3tamBShRlwqQt
-temp_aws_session_token: IQoJb3JpZ2luX2VjEFsaCXVzLWVhc3QtMSJHMEUCIHWbrnoBRprFeyC2qVFrczllVAjV1ye+ohMU2Zkb+YLcAiEAhB+9INgIxpkiil+RiU61qS0E+EJqCzV/yxfa40AWZsMq6gIIpP//////////ARAAGgw5MDU0MTgzNDk1NTYiDAzpAV9+2LFYCxQUXCq+AmO0dUV5xF9/HULNYxc67V04bkWm1eSsSfQhKu3r9trtYsdvrCI6eENpV9pSuRqRZ66FPgRfYFoemNqnfwRIoodZ+EZbQyG0egvSHTO0fN9+WjtVGwi+MaFoYleWy/xDDTmDIdJcxOc1iRVlDO0Tq02ZJVZ703oD+AyTsrxRbY9rpqda0c2vX5AjsVohJmz3v5jtt4yfOF1DfjDzNcDAyEe6ictS+Ou6aNfqzIBBkFwRQGgY2Eajs5B51HWBtiWOJPbJqGegjnhqTtazViXx8dqvDcmpBGGP4dLVWjQX05+m3H1Vzo8wzZ1u+RDUkTeK7bZum0e70Srd0KbrSyLRaumjRA+LmT5amX63bXLm1NQ4SRYu46aM+S3aJLkXdYOrfJrS1zTgGN6m3FozDRnS1Y42tE5HIZC6do1NBqv3PjDu3aixBjqdAXsHzmBNka+LsTjHoV0kE/XbKsdMWCu/BAukKCjBWpRfr4GKYv/NH0CD8oFbRhBrla1OCgn7TTs1rCI6VUX1bXR2r4IMzCNbWdBDc9u42rP567zRhXJXQZLZs6LF7req0sVodcYZDw3CiA2npFrHpYZVwEquiETIyZx9+4ubPqbxXm05K+YE8q4VjszgFM54eBmJOEvP3KWjyFRyROI=
+temp_aws_access_key_id: ${{secrets.ACCESS_KEY_ID}}
+temp_aws_secret_access_key: ${{secrets.SECRET_ACCESS_KEY}}
+temp_aws_session_token: ${{secrets.SESSION_TOKEN}}
 use_temp_creds: false
